@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elegant Ladies Tailor</title>
+
+<style>
+
+/* BODY */
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav{
+    background:#6a0dad;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+
+nav ul li{
+    margin:0 20px;
+}
+
+nav ul li a{
+    color:red;
+    text-decoration:none;
+    font-size:18px;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* HOME SECTION */
+.home{
+    height:90vh;
+    background-size:cover;
+    color:black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-shadow:2px 2px 5px brown;
+}
+
+.home h1{
+    font-size:45px;
+}
+
+/* SECTION STYLE */
+section{
+    padding:40px;
+    text-align:center;
+}
+
+/* SERVICES */
+.service-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.service{
+    background:#f4f4f4;
+    margin:15px;
+    padding:20px;
+    width:220px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+.service:hover{
+    transform:scale(1.05);
+}
+
+/* CONTACT */
+.contact{
+    background:#eee;
+}
+
+/* FOOTER */
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+button{
+    padding:10px 20px;
+    background:#6a0dad;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#4b0082;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HOME -->
+<div class="home" id="home">
+<h1>Elegant Ladies Tailor</h1>
+<p>Perfect Stitching for Every Woman</p>
+<button onclick="book()">Book Appointment</button>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Us</h2>
+<p>
+We specialize in women's tailoring with modern designs,
+perfect fitting and quality stitching.  
+Customized dresses designed with elegance and comfort.
+</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<h2>Our Services</h2>
+
+<div class="service-box">
+<div class="service">Blouse Stitching</div>
+<div class="service">Chudithars Stitching</div>
+<div class="service">Salwar Stitching</div>
+<div class="service">Lehenga Design</div>
+<div class="service">Alterations</div>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p>📍 Pattalam, Chennai</p>
+<p>📞 9791078745</p>
+<p>📧 eleganttailor@gmail.com</p>
+</section>
+
+<footer>
+<p>© 2026 Elegant Ladies Tailor</p>
+</footer>
+
+<script>
+function book(){
+    alert("Appointment Booked Successfully!");
+}
+</script>
+
+</body>
+</html>
